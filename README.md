@@ -1,6 +1,9 @@
 # sleep_tech
 슬립테크 수면건강 아이디어 공모전 준비
 
+<p>TeamName: 나비잠<p>
+<br>
+<h3>Environment</h3>
 - .github: Github action을 동작하기 위한 폴더입니다.
 - backend: 시스템 구성파일을 관리합니다.
 - frontend : templates나 static과 같은 웹페이지를 구성합니다.
