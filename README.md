@@ -6,7 +6,7 @@
 - frontend : templates나 static과 같은 웹페이지를 구성합니다.
 - Dockerfile: Docker 플랫폼에서 실행될 이미지를 정의합니다.
 - requirements: 라이브러리 정보를 가지고 있습니다.
-
+<hr>
 <h4>Panel</h4>
 <p align="Left">
 <img src="https://user-images.githubusercontent.com/59524278/176220440-57df64ba-5e5e-4f2c-b8c7-411e8882e590.jpg" width="20%" height="30%">
