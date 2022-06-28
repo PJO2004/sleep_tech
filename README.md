@@ -7,7 +7,8 @@
 - Dockerfile: Docker 플랫폼에서 실행될 이미지를 정의합니다.
 - requirements: 라이브러리 정보를 가지고 있습니다.
 
-<p align="center">
+<h4>Panel</h4>
+<p align="Right">
 <img src="https://user-images.githubusercontent.com/59524278/176220440-57df64ba-5e5e-4f2c-b8c7-411e8882e590.jpg" width="20%" height="30%">
 <img src="https://user-images.githubusercontent.com/59524278/176220486-24426643-2702-4b94-9892-ed75cc17009d.jpg" width="20%" height="30%">
 <img src="https://user-images.githubusercontent.com/59524278/176220502-e0bff511-5d91-486e-b7ec-7914cddfb67c.jpg" width="20%" height="30%">
