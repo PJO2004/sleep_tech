@@ -3,6 +3,8 @@
 
 # TeamName: 나비잠
 ## Introduce
+<img src="https://user-images.githubusercontent.com/59524278/176324637-eb965d3f-220c-49c8-9373-52cd6a9c8706.png" width="20%" height="30%">
+인공지능 개발을 하기 전 적절한 AI 모델링을 하기 위해 AI Hub의 라이프 로그 데이터 수집 및 데이터 를 한곳에다 모으는 것을 도와줄 프로그램 을 작성 및 프레임 워크 구축을 하는 것에 목표를 둠
 
 ## idea
 <동기>
