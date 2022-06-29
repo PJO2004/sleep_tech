@@ -1,7 +1,7 @@
 :root{
     --main-background: #280b31;
     --main-fonts-color: #fff;
-    --main-decor-color:#a16bd6;
+    --main-decor-color:#406dd5;
     --main-header-background:#21252e;
     --main-font-family: 'Poppins', sans-serif;
 }
@@ -202,7 +202,7 @@ a.nav-link{
     width: 200px;
     height:250px;
     border-radius:12px;
-    background:var(--main-decor-color);
+    background: #a16bd6;
 }
 
 .card img{
@@ -310,3 +310,21 @@ hr {
     margin-top: 80px;
     border-radius: 10px;
 }
+
+/*────────────────── 
+     Button
+──────────────────*/
+.button {
+    margin: 10px;
+    background-color: #631fd1;
+    ; /* Blue */
+    border-radius: 10px;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    }
+    
+    
