@@ -1,7 +1,18 @@
-# sleep_tech
-슬립테크 수면건강 아이디어 공모전 준비
+# sleep_tech 수면건강 아이디어 공모전
 
-# TeamName: 나비잠
+팀 : 나비잠
+
+개발인원 : 3명
+
+## 기능 명세
+- 데이터 처리
+  - csv & excel file upload to db (사용자 등록)
+  - 한국어 data 자동 kr -> en 번역
+  - dashboard
+  
+## 제공 서비스
+- 처리된 실시간 데이터 dashboard
+
 ## Introduce
 <img src="https://user-images.githubusercontent.com/59524278/176324637-eb965d3f-220c-49c8-9373-52cd6a9c8706.png" width="60%" height="100%">
 
