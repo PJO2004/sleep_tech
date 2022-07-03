@@ -18,7 +18,7 @@ def create_app():
     """
 
     app = FastAPI()
-    app.mount("../../frontend/static/css", StaticFiles(directory="static"), name="static")
+    app.mount("../../frontend/static/css", StaticFiles(directory="css"), name="css")
 
     # 라우터 정의
     app.include_router(index.router)
