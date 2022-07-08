@@ -15,7 +15,7 @@
 main{
     padding: 0;
     width: 100%;
-    height: 2000px;
+    height: 2200px;
     /*출처: https://pixabay.com/ko/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2675322*/
     background: var(--main-background);
 }
@@ -95,7 +95,7 @@ a.nav-link{
     background-position:center;
     position: absolute;
 
-    background: url("/frontend/static/images/backgroundhome.jpg") no-repeat center center fixed; 
+    background: url("../images/backgroundhome.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -110,9 +110,9 @@ a.nav-link{
 
 .intro {
     text-align:center;
+    /* margin: auto; */
     color: var(--main-fonts-color);
     z-index: 1;
-    margin: auto;
     padding: 20px;
 }
 
@@ -200,7 +200,7 @@ a.nav-link{
     flex-direction: column;
     margin: 20px;
     width: 200px;
-    height:250px;
+    height: 250px;
     border-radius:12px;
     background: #a16bd6;
 }
@@ -237,7 +237,7 @@ a.nav-link{
 ──────────────────*/
 
 #contact{
-    margin: auto;
+    margin-top: 350px;
     padding-bottom: 20px;
     height: 600px;
     display: flex;
