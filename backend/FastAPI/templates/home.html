@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>sleeptech-나비잠</title>
-    <link href="../static/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', path='/css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <script src="https://kit.fontawesome.com/def66b134a.js"></script>
     <!-- web site icon-->
     <link rel="icon" href="../static/images/logo.jpg">
 
+
 </head>
 
 <body>
-
     <div class="container">
 
         <!--────────────────Header───────────────-->
@@ -33,25 +33,27 @@
             <!--─────────────────Home────────────────-->
             <div id="home">
                 <div class="filter"></div>
-                <section class="intro">
-                    <h3>나비잠
-                        <hr>
-                    </h3>
-                    <p>2022년도 슬립테크 공모전</p>
-                    <br>
-                    <h4>Introduce</h4>
-                    <p>인공지능 개발을 하기 전 적절한 AI 모델링을 하기 위해 <br>AI Hub의 라이프 로그 데이터 수집 및 데이터 를 한곳에다 <br>모으는 것을 도와줄 프로그램 을 작성 및
-                        프레임 워크 구축을 하는 것에 목표를 둠.</p>
-                    <!--────social media links─────-->
 
-                    <div class="social-media">
-                        <a href="https://github.com/PJO2004/sleep_tech" target="_blank"><i
-                                class='fab fa-github'></i></a>
-                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </section>
+                    <section class="intro">
+                        <h3>나비잠
+                            <hr>
+                        </h3>
+                        <p>2022년도 슬립테크 공모전</p>
+                        <br>
+                        <h4>Introduce</h4>
+                        <p>인공지능 개발을 하기 전 적절한 AI 모델링을 하기 위해 <br>AI Hub의 라이프 로그 데이터 수집 및 데이터 를 한곳에다 <br>모으는 것을 도와줄 프로그램 을
+                            작성 및
+                            프레임 워크 구축을 하는 것에 목표를 둠.</p>
+                        <!--────social media links─────-->
+
+                        <div class="social-media">
+                            <a href="https://github.com/PJO2004/sleep_tech" target="_blank"><i
+                                    class='fab fa-github'></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </section>
             </div>
-            <br><br><br><br><br>
+            <!-- <br><br><br><br><br> -->
 
             <!--───────────────Project───────────────-->
             <div id="contact">
@@ -67,10 +69,10 @@
                 <p>기존 수면에 대한 연구를 인공지능과 실시간으로 수집하는 웨어러블 데이터들을 토대로 연<br>
                     구를 촉진 시키며, 더 정확하고 빠르게 수면 주기와 패턴을 분석, <br>
                     분석한 데이터를 활용하여 사용자들의 쾌적한 수면을 돕는 것에 목표를 둠</p>
-                
+
                 <div>
-                    <a href="http://localhost/docs" class="button">CSV File Uploader</a>
-                    
+                    <a href="http://127.0.0.1:8000/docs" class="button">CSV File Uploader</a>
+
                     <a href="#" class="button">DashBoard</a>
                 </div>
                 <!--──────────────developer────────────────-->
@@ -87,21 +89,27 @@
                                 <img class="work-img" src="https://avatars.githubusercontent.com/u/59524278?v=4">
                                 <a href="https://github.com/PJO2004" target="_blank">
                                     <!--Link to project-->
-                                    <div class="work-content">Jungwon Park<br><h6>Database기능 시스템<br>DashBoard & Web 기능</h6></div>
+                                    <div class="work-content">Jungwon Park<br>
+                                        <h6>Database기능 시스템<br>DashBoard & backend</h6>
+                                    </div>
                                 </a>
                             </div>
                             <div class="card">
                                 <img class="work-img" src="https://avatars.githubusercontent.com/u/94216945?v=4">
                                 <a href="https://github.com/leesuaok" target="_blank">
                                     <!--Link to project-->
-                                    <div class="work-content">leesuaok<br><h6>FastAPI 기능 구현<br>css데이터 자동 추출 기능 구현</h6></div>
+                                    <div class="work-content">leesuaok<br>
+                                        <h6>FastAPI 기능 구현<br>css데이터 자동 추출 기능 구현</h6>
+                                    </div>
                                 </a>
                             </div>
                             <div class="card">
                                 <img class="work-img" src="https://avatars.githubusercontent.com/u/58096790?v=4">
                                 <a href="https://github.com/WasabiRaman" target="_blank">
                                     <!--Link to project-->
-                                    <div class="work-content">JoonheeKim<br><h6>Framework구축</h6></div>
+                                    <div class="work-content">JoonheeKim<br>
+                                        <h6>Framework구축<br>frontend</h6>
+                                    </div>
                                 </a>
                             </div>
                         </div>

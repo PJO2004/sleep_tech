@@ -1,0 +1,6 @@
+# venv
+/FastAPI/venv-fastapi/*
+
+# data
+/data/*.csv
+/data/*.txt
