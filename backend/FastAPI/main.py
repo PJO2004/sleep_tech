@@ -5,6 +5,16 @@ from fastapi.templating import Jinja2Templates
 from fastapi import File, UploadFile
 import os
 
+# graph
+import pandas as pd
+import cufflinks as cf
+
+df = pd.read_csv('data/sample_sleep.csv')
+data = df['EMAIL'].value_counts()
+plot = data.iplot(asFigure=True, xTitle='EMAIL', yTitle='data count')
+pjs = plot.to_json().replace('/', '')
+print(data)
+
 app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -13,7 +23,7 @@ templates = Jinja2Templates(directory="templates")
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request:Request):
-    return templates.TemplateResponse('home.html', {"request": request}) 
+    return templates.TemplateResponse('home.html', {"request": request, 'data':pjs}) 
 
 @app.post("/csv")
 async def upload_file(file: UploadFile = File(...)):

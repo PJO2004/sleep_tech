@@ -27,8 +27,8 @@
                 <ul class="nav-bar">
                     <div class="bg"></div>
                     <li><a class="nav-link active" href="#home">Home</a></li>
-                    <li><a class="nav-link" href="#projects">Project</a></li>
-                    <li><a class="nav-link" href="#contact">Developer</a></li>
+                    <li><a class="nav-link" href="#contact">Project</a></li>
+                    <li><a class="nav-link" href="#developer">Developer</a></li>
                 </ul>
 
             </nav>
@@ -38,24 +38,24 @@
             <div id="home">
                 <div class="filter"></div>
 
-                    <section class="intro">
-                        <h3>나비잠
-                            <hr>
-                        </h3>
-                        <p>2022년도 슬립테크 공모전</p>
-                        <br>
-                        <h4>Introduce</h4>
-                        <p>인공지능 개발을 하기 전 적절한 AI 모델링을 하기 위해 <br>AI Hub의 라이프 로그 데이터 수집 및 데이터 를 한곳에다 <br>모으는 것을 도와줄 프로그램 을
-                            작성 및
-                            프레임 워크 구축을 하는 것에 목표를 둠.</p>
-                        <!--────social media links─────-->
+                <section class="intro">
+                    <h3>나비잠
+                        <hr>
+                    </h3>
+                    <p>2022년도 슬립테크 공모전</p>
+                    <br>
+                    <h4>Introduce</h4>
+                    <p>인공지능 개발을 하기 전 적절한 AI 모델링을 하기 위해 <br>AI Hub의 라이프 로그 데이터 수집 및 데이터 를 한곳에다 <br>모으는 것을 도와줄 프로그램 을
+                        작성 및
+                        프레임 워크 구축을 하는 것에 목표를 둠.</p>
+                    <!--────social media links─────-->
 
-                        <div class="social-media">
-                            <a href="https://github.com/PJO2004/sleep_tech" target="_blank"><i
-                                    class='fab fa-github'></i></a>
-                            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </section>
+                    <div class="social-media">
+                        <a href="https://github.com/PJO2004/sleep_tech" target="_blank"><i
+                                class='fab fa-github'></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </section>
             </div>
 
             <!--───────────────Project───────────────-->
@@ -72,19 +72,32 @@
                 <p>기존 수면에 대한 연구를 인공지능과 실시간으로 수집하는 웨어러블 데이터들을 토대로 연<br>
                     구를 촉진 시키며, 더 정확하고 빠르게 수면 주기와 패턴을 분석, <br>
                     분석한 데이터를 활용하여 사용자들의 쾌적한 수면을 돕는 것에 목표를 둠</p>
+                <!-- 
+                <p>{{data}}</p>> -->
 
                 <div>
                     <a href="http://127.0.0.1:8000/docs" class="button">CSV File Uploader</a>
-                    
+                </div>
+                <div>
                     <!--──────────────graph──────────────────-->
-                    <div id="tester" style="width:90%; height:250px">
-                        <script src="index.js">
-                            
+
+                    <div id="tester" style="width:50%; height:500px">
+                        
+                        <script>
+                            TESTER = document.getElementById('tester')
+
+                            Plotly.plot(TESTER,
+                                [{
+                                    x: ['nia+106@rowan.kr', 'nia+252@rowan.kr', 'nia+067@rowan.kr', 'nia+141@rowan.kr', 'nia+016@rowan.kr', 'nia+188@rowan.kr',
+                                        'nia+279@rowan.kr', 'nia+343@rowan.kr', 'nia+181@rowan.kr', 'nia+118@rowan.kr', 'nia+041@rowan.kr', 'nia+354@rowan.kr',
+                                        'nia+268@rowan.kr', 'nia+438@rowan.kr', 'nia+088@rowan.kr', 'nia+144@rowan.kr',
+                                    ],
+                                    y: [91, 88, 75, 69, 67, 65, 64, 62, 62, 62, 60, 57, 57, 43, 42, 36]
+                                }], { margin: { t: 10 } }, { showSendToCloud: true });
+
+                            console.log(Plotly.BUILD)
                         </script>
                     </div>
-
-
-                    <!-- <a href="#" class="button">DashBoard</a> -->
                 </div>
                 <!--──────────────developer────────────────-->
                 <div id="developer">
