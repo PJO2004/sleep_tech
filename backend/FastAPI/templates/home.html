@@ -7,6 +7,10 @@
     <title>sleeptech-나비잠</title>
     <link href="{{ url_for('static', path='/css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <!-- graph -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
     <script src="https://kit.fontawesome.com/def66b134a.js"></script>
     <!-- web site icon-->
     <link rel="icon" href="../static/images/logo.jpg">
@@ -53,7 +57,6 @@
                         </div>
                     </section>
             </div>
-            <!-- <br><br><br><br><br> -->
 
             <!--───────────────Project───────────────-->
             <div id="contact">
@@ -72,8 +75,14 @@
 
                 <div>
                     <a href="http://127.0.0.1:8000/docs" class="button">CSV File Uploader</a>
+                    
+                    <!--──────────────graph──────────────────-->
+                    <div id="tester" style="width:90%; height:250px">
+                        <script src="index.js"></script>
+                    </div>
 
-                    <a href="#" class="button">DashBoard</a>
+
+                    <!-- <a href="#" class="button">DashBoard</a> -->
                 </div>
                 <!--──────────────developer────────────────-->
                 <div id="developer">

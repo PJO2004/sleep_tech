@@ -19,6 +19,8 @@ async def read_root(request:Request):
 async def upload_file(file: UploadFile = File(...)):
     upload_directory = "./data/"
     contents = await file.read()
+
+    # test
     with open(os.path.join(upload_directory, "data.csv"), "wb") as fp:
         fp.write(contents)
 
