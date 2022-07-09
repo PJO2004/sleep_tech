@@ -7,3 +7,5 @@ async-exit-stack
 python-multipart
 pandas
 requests
+cufflinks
+plotly
