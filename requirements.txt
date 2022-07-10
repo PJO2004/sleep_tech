@@ -9,3 +9,4 @@ pandas
 requests
 cufflinks
 plotly
+openpyxl
