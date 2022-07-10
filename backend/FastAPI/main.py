@@ -5,6 +5,9 @@ from fastapi.templating import Jinja2Templates
 from fastapi import File, UploadFile
 import os
 
+# sample_data
+os.system('python dashboard_sample_data/test.py')
+
 # graph
 import pandas as pd
 import cufflinks as cf
@@ -13,7 +16,6 @@ df = pd.read_csv('data/sample_sleep.csv')
 data = df['EMAIL'].value_counts()
 plot = data.iplot(asFigure=True, xTitle='EMAIL', yTitle='data count')
 pjs = plot.to_json().replace('/', '')
-print(data)
 
 app = FastAPI()
 

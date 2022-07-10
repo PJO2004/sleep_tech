@@ -10,7 +10,7 @@ s.s_password = "postgres"
 s.s_port = 5432
 
 s.create_sleeptable()
-data = pd.read_excel("./sample_sleep.xlsx")
+data = pd.read_excel("./dashboard_sample_data/sample_sleep.xlsx")
 s.insert_sleeptable(data)
 
 #mmse table
@@ -22,7 +22,7 @@ m.m_password = "postgres"
 m.m_port = 5432
 
 m.create_mmsetable()
-data = pd.read_excel("./sample_mmse.xlsx")
+data = pd.read_excel("./dashboard_sample_data/sample_mmse.xlsx")
 m.insert_mmsetable(data)
 
 #processing table
