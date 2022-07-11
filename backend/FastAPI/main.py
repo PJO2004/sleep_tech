@@ -6,15 +6,17 @@ from fastapi.templating import Jinja2Templates
 from fastapi import File, UploadFile
 import os
 
+from fastapi.middleware.cors import CORSMiddleware
+
 # sample_data
 os.system('python dashboard_sample_data/test.py')
 
 # graph
 import pandas as pd
 import cufflinks as cf
-from database.db_connect import engine
 
-import json
+# db
+from database.db_connect import engine
 
 df = pd.read_csv('data/sample_sleep.csv')
 data = df['EMAIL'].value_counts()
@@ -50,11 +52,12 @@ async def read_root(request:Request):
     df.columns = ['name', 'cnt_data']
     df.set_index('name', inplace=True)
     json_object = df.to_json()
+    
 
-    with open('./src/app.json', 'w') as f:
+    with open('./src/data.json', 'w') as f:
         f.write(json_object)
     
-    return templates.TemplateResponse('home.html', {"request": request}) 
+    return templates.TemplateResponse('home.html', {"request": request, 'email':len(set(email)), 'diag_nm':len(set(diag_nm)), 'duravg':len(set(duravg))}) 
 
 @app.post("/csv")
 async def upload_file(file: UploadFile = File(...)):

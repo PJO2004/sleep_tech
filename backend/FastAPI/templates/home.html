@@ -15,12 +15,12 @@
     <!-- web site icon-->
     <link rel="icon" href="../static/images/logo.jpg">
 
-
+    <!-- script -->
+    <!-- <script type="text/javascript" src="../src/app.js" defer></script> -->
+    <script>
+        
+    </script>
 </head>
-<script>
-   axios
-</script>
-
 <body>
     <div class="container">
 
@@ -79,28 +79,25 @@
                 <div>
                     <a href="http://127.0.0.1:8000/docs" class="button">CSV File Uploader</a>
                 </div>
+                <br>
+                <h4>사용자 : {{email}}</h4>
+                <h4>치매 : {{diag_nm}}</h4>
+                <h4>평균 수면 시간 : {{duravg}}</h4>
                 <div>
                     <!--──────────────graph──────────────────-->
-
                     <div id="myDiv" style="width:50%; height:500px">
-                        
-                        <script>
-                            var people_data = 
-                            [{
-                                    r: [91, 88, 75, 69, 67, 65, 64, 62, 62, 62, 60, 57, 57, 43, 42, 36],
-                                    theta: ['nia+106@rowan.kr', 'nia+252@rowan.kr', 'nia+067@rowan.kr', 'nia+141@rowan.kr', 'nia+016@rowan.kr', 'nia+188@rowan.kr',
-                                        'nia+279@rowan.kr', 'nia+343@rowan.kr', 'nia+181@rowan.kr', 'nia+118@rowan.kr', 'nia+041@rowan.kr', 'nia+354@rowan.kr',
-                                        'nia+268@rowan.kr', 'nia+438@rowan.kr', 'nia+088@rowan.kr', 'nia+144@rowan.kr',
-                                    ],
-                                    type: 'scatterpolar',
-                                    fill: 'toself',
-                                    name: 'people_data_set'
-                                }];
+                            <script>
+                                var people_data = [{
+                            r: [16, 3, 5,  11, 199, 13],
+                            theta: ['email', 'diag_nm', 'duravg', 'efficiency', 'durstd', 'sleep_score'
+                            ],
+                            type: 'scatterpolar',
+                            fill: 'toself',
+                            name: 'people_data_set'
+                        }];
 
-                            Plotly.newPlot('myDiv', people_data)
-                            // console.log(Plotly.BUILD)
-                        </script>
-                        
+                    Plotly.newPlot('myDiv', people_data)
+                            </script>
                     </div>
                 </div>
                 <!--──────────────developer────────────────-->
@@ -156,6 +153,8 @@
         </footer>
 
     </div>
+    
+    
 </body>
 
 </html>
