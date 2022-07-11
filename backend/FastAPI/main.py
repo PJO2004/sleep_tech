@@ -1,12 +1,9 @@
-from numpy import diag
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi import File, UploadFile
 import os
-
-from fastapi.middleware.cors import CORSMiddleware
 
 # sample_data
 os.system('python dashboard_sample_data/test.py')
@@ -61,7 +58,7 @@ async def read_root(request:Request):
 
 @app.post("/csv")
 async def upload_file(file: UploadFile = File(...)):
-    upload_directory = "./data/"
+    upload_directory = "./app/data/"
     contents = await file.read()
 
     # test
@@ -70,6 +67,8 @@ async def upload_file(file: UploadFile = File(...)):
 
     with open(os.path.join(upload_directory, "filename.txt"), "w") as fp:
         fp.write(file.filename.split(".")[0])
+
+    os.system("python app/db_.py")
 
     return {"filename": file.filename}
 
