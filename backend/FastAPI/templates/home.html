@@ -17,6 +17,9 @@
 
 
 </head>
+<script>
+   axios
+</script>
 
 <body>
     <div class="container">
@@ -72,8 +75,6 @@
                 <p>기존 수면에 대한 연구를 인공지능과 실시간으로 수집하는 웨어러블 데이터들을 토대로 연<br>
                     구를 촉진 시키며, 더 정확하고 빠르게 수면 주기와 패턴을 분석, <br>
                     분석한 데이터를 활용하여 사용자들의 쾌적한 수면을 돕는 것에 목표를 둠</p>
-                <!-- 
-                <p>{{data}}</p>> -->
 
                 <div>
                     <a href="http://127.0.0.1:8000/docs" class="button">CSV File Uploader</a>
@@ -85,7 +86,7 @@
                         
                         <script>
                             var people_data = 
-                            {
+                            [{
                                     r: [91, 88, 75, 69, 67, 65, 64, 62, 62, 62, 60, 57, 57, 43, 42, 36],
                                     theta: ['nia+106@rowan.kr', 'nia+252@rowan.kr', 'nia+067@rowan.kr', 'nia+141@rowan.kr', 'nia+016@rowan.kr', 'nia+188@rowan.kr',
                                         'nia+279@rowan.kr', 'nia+343@rowan.kr', 'nia+181@rowan.kr', 'nia+118@rowan.kr', 'nia+041@rowan.kr', 'nia+354@rowan.kr',
@@ -94,19 +95,9 @@
                                     type: 'scatterpolar',
                                     fill: 'toself',
                                     name: 'people_data_set'
-                                }; 
+                                }];
 
-                            var sample_data = 
-                                {
-                                    x: ['giraffes', 'b', 'c'],
-                                    y: [20,14,23],
-                                    type: 'bar',
-                                    name: 'test_case'
-                                };
-
-                            var data = [people_data, sample_data]
-
-                            Plotly.newPlot('myDiv', data)
+                            Plotly.newPlot('myDiv', people_data)
                             // console.log(Plotly.BUILD)
                         </script>
                         

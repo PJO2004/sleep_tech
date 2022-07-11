@@ -39,8 +39,7 @@ n.data_processing()
 #processing table에서 원하는 데이터 추출
 data = n.sleep_time_graph_table()
 df = pd.DataFrame(data)   #딕셔너리 데이터프레임으로 변환
-print(df)
+
 
 data2 = n.sleep_score_graph_table()
 df2 = pd.DataFrame(data2)   #딕셔너리 데이터프레임으로 변환
-print(df2)
