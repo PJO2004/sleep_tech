@@ -1,5 +1,4 @@
-import data from "./data" 
+import data from "./data.json"; 
 
-console.log(data)
-
-export default app
+console.log("Hello World");
+console.log(data);
